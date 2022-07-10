@@ -81,7 +81,7 @@ a {
     flex-shrink: 0;
     padding: 0 30px;
     white-space: nowrap;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.25);
     -webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(20px);
     border-radius: 14px 14px 0 0;
@@ -112,9 +112,9 @@ a {
 .left-nav {
     display: flex;
     align-items: flex-start;
-    width: 15%;
+    width: 20%;
     height: 100%;
-    background: rgba(255, 255, 255, .3);
+    background: rgba(255, 255, 255, .25);
     -webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
     overflow: auto;
@@ -124,6 +124,7 @@ a {
 .left-wrapper {
     margin: 0 auto;
     height: 100%;
+    width: 80%;
     padding-bottom: 1em;
 }
 
@@ -145,19 +146,33 @@ a {
     font-weight: 400;
     font-size: 16px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     max-width: 100%;
     border-radius: 5px;
-    padding: 7px; 
+    padding: 8px 0px; 
 }
 
 .left-btn i {
     font-size: 14px;
-    padding-right: 5px;
+    padding-right: 0.45em;
+    padding-left: 0.45em;
+}
+
+.left-btn span {
+    display: inline-block;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    padding-top: 1px;
+    margin-left: 40%;
+    color: white;
+    font-size: 15px;
+    background-color: rgb(25, 0, 255);
 }
 
 .left-btn:hover {
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, .3);
     -webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
     cursor: pointer;
@@ -166,12 +181,12 @@ a {
 
 /* MAIN */
 .main {
-    width: 85%;
+    width: 80%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.4);
     -webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
-    border-left: 1px solid whitesmoke
+    border-left: 1px solid whitesmoke;
 }
 
 /* MEDIA */
