@@ -52,15 +52,82 @@ body {
 
 /* APP SECTION*/
 .app {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     max-width: 1280px;
     max-height: 900px;
     height: 90vh;
     width: 100%;
     border-radius: 14px;
-    border: 1px solid black;
     position: relative;
-    z-index: 3;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.3);
 }
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* APP HEADER */
+.header {
+    height: 3.625rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0 30px;
+    white-space: nowrap;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(20px);
+    border-radius: 14px 14px 0 0;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.header-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-links a {
+    display : inline-block;
+    vertical-align : middle;
+    line-height : 20px;
+}
+
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.left-nav {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    background: rgba(255, 255, 255, .1);
+    -webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+    flex-shrink: 0;
+}
+
+.main {
+    width: 80%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+    border-left: 1px solid whitesmoke
+}
+/* MEDIA */
 
 @media screen and (max-width: 480px) {
     body {
