@@ -179,16 +179,22 @@ a {
     font-size: 14px;
     padding-right: 0.45em;
     padding-left: 0.45em;
+    width: 15%;
+    margin-right: 5px;
+}
+
+.left-btn p {
+    width: 80%;
 }
 
 .left-btn span {
-    display: inline-block;
+    flex-shrink: 0;
     border-radius: 50%;
     width: 18px;
     height: 18px;
     text-align: center;
     padding-top: 1px;
-    margin-left: 40%;
+    margin-right: 4%;
     color: white;
     font-size: 15px;
     background-color: rgb(25, 0, 255);
