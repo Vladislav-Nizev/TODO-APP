@@ -161,17 +161,14 @@
                         <div class="widgets">
                             <div class="goal">
                                 <div class="progress-circle">
-                                    <svg height="150" width="300" class="circle">
-                                        <defs>
-                                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                                              <stop offset="0%" style="stop-color:rgb(62, 100, 224);stop-opacity:1" />
-                                              <stop offset="100%" style="stop-color:rgb(255, 0, 149);stop-opacity:1" />
-                                            </linearGradient>
-                                        </defs>
-                                        <circle id="cicrle" cx="160" cy="75" r="65" stroke="url(#grad1)"
-                                            stroke-width="20" stroke-opacity="0.3" fill="none"></circle>
+                                    <span class="timer"></span>
+                                    <svg height="150" width="150" class="circle">
+                                        <circle id="seconds-circle" cx="75" cy="75" r="65" stroke="rgb(174, 105, 225)"
+                                            stroke-width="20" stroke-opacity="0.3" stroke-dashoffset="410" fill="none"></circle>
                                     </svg>
                                 </div>
+                            </div>
+                            <div class="info-box">
                             </div>
                             <div class="info-box">
                             </div>
@@ -186,5 +183,6 @@
                 </div>
             </div>
         </div>
+        <script src="/src/scripts/progressCircle.js"></script>
     </body>
 </html>

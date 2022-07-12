@@ -321,11 +321,11 @@ a {
 .widgets {
     margin-top: 2%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .widgets > div {
-    width: 32%;
+    width: 23%;
     height: 20em;
     background-color: rgba(255, 255, 255, .8);
     border-radius: 15px;
@@ -335,6 +335,35 @@ a {
     width: 100%;
     margin: 1em auto;
 }
+
+.progress-circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.progress-circle::after, .timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progress-circle::after {
+    content: " ";
+    width: 150px;
+    height: 150px;
+    border-radius: inherit;
+}
+
+.circle {
+    stroke-dasharray: 410;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    animation: bar-fill 20s linear forwards;
+}
+
 
 
 
