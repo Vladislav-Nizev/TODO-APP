@@ -385,7 +385,10 @@ a {
 
 /* MEDIA */
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 834px) 
+    and (device-width : 414px)
+    and (device-height : 896px)
+    and (-webkit-device-pixel-ratio : 2) {
     .video-bg {
         display: none;
     }
