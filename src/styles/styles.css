@@ -385,10 +385,24 @@ a {
 
 /* MEDIA */
 
+/*  iPhone 11 and iPhone XR
+iPhone 13 mini, iPhone 12 mini, iPhone 11 Pro, iPhone Xs, and iPhone X
+iPhone 13, iPhone 12 and iPhone 12 Pro
+iPhone 13 Pro Max and iPhone 12 Pro Max
+*/
 @media screen and (max-width: 834px), 
     (device-width : 414px)
     and (device-height : 896px)
-    and (-webkit-device-pixel-ratio : 2) {
+    and (-webkit-device-pixel-ratio : 2)
+    ,(device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3)
+    ,(device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3)
+    ,(device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3){
     .video-bg {
         display: none;
     }
