@@ -406,14 +406,17 @@ iPhone 13 Pro Max and iPhone 12 Pro Max
     body {
         width: 100%;
         height: 100vh;
-        background: url("https://i.ibb.co/XZ35t6w/light-background-image.jpg");
-        background-size: cover;
         padding: 0;
     }
 
     .app {
         height: 100vh;
         width: 99vw;
+    }
+
+    .wrapper {
+        background: url("https://i.ibb.co/XZ35t6w/light-background-image.jpg");
+        background-size: cover;
     }
 
     .left-nav {
