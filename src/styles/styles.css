@@ -14,7 +14,7 @@ html {
 
 body {
     font-family: "Roboto", Arial, sans-sefir;;
-    background-image: url(/src/images/light-background-image.jpeg);
+    background-image: url(src/images/light-background-image.jpeg);
     background-size: cover;
     background-position: center;
     display: flex;
