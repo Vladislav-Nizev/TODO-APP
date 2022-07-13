@@ -507,5 +507,12 @@ iPhone 13 Pro Max and iPhone 12 Pro Max
     .progress-circle {
         margin: 2%;
     }
+
+    .progress-circle::after, .number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
