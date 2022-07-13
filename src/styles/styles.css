@@ -361,7 +361,7 @@ a {
     border-radius: 50%;
 }
 
-.progress-circle::after, .timer {
+.progress-circle::after, .timer, .number {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -397,6 +397,7 @@ a {
     transform: rotate(-90deg);
     animation: bar-fill 20s linear forwards;
 }
+
 
 input[type="range"] {
     -webkit-appearance: none;

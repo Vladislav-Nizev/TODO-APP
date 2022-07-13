@@ -188,10 +188,10 @@
 
                             <div class="goal widget-wrapper">
                                 <div class="progress-circle">
-                                    <span class="timer"></span>
-                                    <svg height="150" width="150" class="circle-range">
-                                        <circle id="seconds-circle" cx="75" cy="75" r="65" stroke="rgb(174, 105, 225)"
-                                            stroke-width="20" stroke-opacity="1" stroke-dashoffset="200" fill="none"></circle>
+                                    <span class="number"></span>
+                                    <svg height="150" width="150" class="circle">
+                                        <circle id="goal-circle" cx="75" cy="75" r="65" stroke="rgb(174, 105, 225)"
+                                            stroke-width="20" stroke-opacity="1" stroke-dashoffset="410" fill="none"></circle>
                                     </svg>
                                     <svg height="150" width="150" class="bg-circle">
                                         <circle id="bg-circle" cx="75" cy="75" r="65" stroke="rgb(174, 105, 225)"
@@ -202,7 +202,7 @@
                                     <p>Выполнено</p>
                                 </div>
                                 <form>
-                                    <input type="range" min="0" max="100" value="0" />
+                                    <input id="goal-range" type="range" min="1" max="100" value="0" />
                                 </form>
                             </div>
 
@@ -220,6 +220,7 @@
                 </div>
             </div>
         </div>
-        <script src="progressCircle.js"></script>
+        <script src="progressCircle.js" async></script>
+        <script src="sliderCircle.js" async></script>
     </body>
 </html>
