@@ -391,10 +391,29 @@ a {
     left: 0;
 }
 
+.circle-range {
+    stroke-dasharray: 410;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    animation: bar-fill 20s linear forwards;
+}
 
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 147px;
+    background: rgba(174, 105, 255, 0.2);
+    height: 48px;
+    margin-top: 1.5em;
+    border-radius: 20px;
+}
 
-
-
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(174, 105, 255, 1);
+}
 
 
 /* MEDIA */

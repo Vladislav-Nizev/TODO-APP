@@ -31,8 +31,8 @@
                 <div class="header-links">
                     <a href="#">Главная</a>
                     <a href="#">Активные</a>
-                    <a href="#">Завершенные</a>
-                    <a href="#">Удаленные</a>
+                    <a href="#">История</a>
+                    <a href="#">Архив</a>
                 </div>
                 <div class="header-searchbar">
                     <input type="text" placeholder="Поиск..."/>
@@ -189,21 +189,21 @@
                             <div class="goal widget-wrapper">
                                 <div class="progress-circle">
                                     <span class="timer"></span>
-                                    <svg height="150" width="150" class="circle">
+                                    <svg height="150" width="150" class="circle-range">
                                         <circle id="seconds-circle" cx="75" cy="75" r="65" stroke="rgb(174, 105, 225)"
                                             stroke-width="20" stroke-opacity="1" stroke-dashoffset="200" fill="none"></circle>
                                     </svg>
                                     <svg height="150" width="150" class="bg-circle">
-                                        <circle id="bg-circle" cx="75" cy="75" r="65" stroke="rgba(174, 105, 225)"
+                                        <circle id="bg-circle" cx="75" cy="75" r="65" stroke="rgb(174, 105, 225)"
                                             stroke-width="20" stroke-opacity="0.2" stroke-dashoffset="0" fill="none"></circle>
                                     </svg>
                                 </div>
                                 <div class="widget-text">
                                     <p>Выполнено</p>
                                 </div>
-                                <div class="widget-btn">
-                                    <a href="#">Подробнее</a>
-                                </div>
+                                <form>
+                                    <input type="range" min="0" max="100" value="0" />
+                                </form>
                             </div>
 
                             <div class="info-box widget-wrapper">
