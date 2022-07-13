@@ -417,6 +417,70 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 
+/* TODO WRAPPER*/
+
+.todo {
+    width: 96%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, .1);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5em 0 0.5em;
+}
+
+
+.node {
+    width: 96%;
+    min-height: 3em;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 1em 1em 0.5em 1em;
+    margin: 0.2em;
+    font-size: 1.2em;
+}
+
+.node-add {
+    width: 96%;
+    height: 4rem;
+    border-radius: 15px;
+    margin: 0.2em;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.node-form {
+    width: 100%;
+}
+
+.node-input {
+    width: 69%;
+    border-radius: 15px 0 0 15px;
+    border: none;
+    font-size: 1.2em;
+    line-height: 2.5em;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(174, 105, 255, 0.2);
+}
+
+.node-input::placeholder {
+    color: rgba(0, 0, 0, 1);
+}
+
+.node-add-btn {
+    width: 30%;
+    border: none;
+    background-color: rgba(174, 105, 255, 1);
+    color: whitesmoke;
+    border-radius: 0 15px 15px 0;
+    font-size: 1.2em;
+    line-height: 2.4em;
+}
+
+
+
 /* MEDIA */
 
 /*  iPhone 11 and iPhone XR
@@ -513,6 +577,10 @@ iPhone 13 Pro Max and iPhone 12 Pro Max
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .node-input {
+        width: 68%;
     }
 }
 
