@@ -319,7 +319,7 @@ a {
 .widgets {
     margin-top: 2%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .widget-wrapper {
@@ -328,6 +328,7 @@ a {
     align-items: center;
     width: 23%;
     height: 100%;
+    margin-right: 1em;
     background-color: rgba(0, 0, 0, .1);
     border-radius: 15px;
 }
@@ -431,7 +432,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 
-.node {
+.note {
     width: 96%;
     min-height: 3em;
     background-color: rgba(255, 255, 255, 0.5);
@@ -441,7 +442,7 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 1.2em;
 }
 
-.node-add {
+.note-add {
     width: 96%;
     height: 4rem;
     border-radius: 15px;
@@ -451,11 +452,11 @@ input[type="range"]::-webkit-slider-thumb {
     flex-wrap: nowrap;
 }
 
-.node-form {
+.note-form {
     width: 100%;
 }
 
-.node-input {
+.note-input {
     width: 69%;
     border-radius: 15px 0 0 15px;
     border: none;
@@ -465,7 +466,7 @@ input[type="range"]::-webkit-slider-thumb {
     background-color: rgba(174, 105, 255, 0.2);
 }
 
-.node-input::placeholder {
+.note-input::placeholder {
     color: rgba(0, 0, 0, 1);
 }
 
@@ -473,7 +474,7 @@ input[type="button"] {
     -webkit-appearance: none;
 }
 
-.node-add-btn {
+.note-add-btn {
     width: 30%;
     border: none;
     background-color: rgba(174, 105, 255, 1);
@@ -583,7 +584,7 @@ iPhone 13 Pro Max and iPhone 12 Pro Max
         transform: translate(-50%, -50%);
     }
 
-    .node-input {
+    .note-input {
         width: 68%;
     }
 }
