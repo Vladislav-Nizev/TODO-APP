@@ -464,11 +464,11 @@ input[type="range"]::-webkit-slider-thumb {
     line-height: 2.5em;
     color: rgba(0, 0, 0, 1);
     background-color: rgba(174, 105, 255, 0.2);
+    padding-left: 1em;
 }
 
 .note-input::placeholder {
     color: rgba(0, 0, 0, 1);
-    padding-left: 1em;
 }
 
 input[type="button"] {
