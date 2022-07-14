@@ -260,6 +260,7 @@ a {
     flex-flow: column nowrap;
     align-items: center;
     width: 80%;
+    padding-bottom: 1.2em;
     overflow: scroll;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(10px);
@@ -380,7 +381,6 @@ a {
     stroke-dasharray: 410;
     stroke-linecap: round;
     transform: rotate(-90deg);
-    animation: bar-fill 20s linear forwards;
 }
 
 .bg-circle {
