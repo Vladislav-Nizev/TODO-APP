@@ -12,8 +12,8 @@
     --main-text: rgba(0, 0, 0, 1);
     --secondary-text: rgba(245, 245, 245, 1);
     --translucent-app-background: rgba(255, 255, 255, 0.25);
-    --secondary-background: rgba(174, 105, 255, 1);
-    --translucent-secondary-bg: rgba(174, 105, 255, 0.2);
+    --secondary-background: rgba(0, 173, 168, 1);
+    --translucent-secondary-bg: rgba(0, 173, 168, 0.2);
     --widgets-bg: rgba(10, 10, 10, 0.07);
 }
 
@@ -312,12 +312,17 @@ a {
     line-height: 1.5em;
 }
 
-.banner img {
+.banner > .exclamation-svg {
     display: block;
     max-height: 60%;
     width: 20%;
     border-radius: 12px;
     object-fit: contain;
+    fill: var(--secondary-background);
+}
+
+.exclamation-bg {
+    fill: var(--secondary-text)
 }
 
 /* MAIN WIDGETS */
@@ -386,6 +391,7 @@ a {
     stroke-dasharray: 410;
     stroke-linecap: round;
     transform: rotate(-90deg);
+    stroke: var(--secondary-background);
 }
 
 .bg-circle {
@@ -395,6 +401,7 @@ a {
     border-radius: 50%;
     top: 0;
     left: 0;
+    stroke: var(--secondary-background);
 }
 
 .circle-range {
@@ -470,6 +477,10 @@ input[type="range"]::-webkit-slider-thumb {
     color: var(--main-text);
     background-color: var(--translucent-secondary-bg);
     padding-left: 1em;
+}
+
+.note:hover {
+    background-color: var(--translucent-secondary-bg);
 }
 
 .note-input::placeholder {
